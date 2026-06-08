@@ -13,7 +13,9 @@
 .display-flex{
     display: flex;
 }
-
+.text-primary{
+    color: tomato;
+}
 
 .text-gray{
     color: #424242;
@@ -25,6 +27,31 @@
 .bg-light{
     background-color: rgba(255, 144, 14, 0.1);
 
+}
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main > section{
+    margin-top: 130px;
+
+}
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+
+.btn-primary{
+    background-color: tomato;
+    color: white;
+    padding: 16px 24px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: 0;
+    border-radius: 8px;
 }
 
 
@@ -66,3 +93,80 @@
     max-width: 1440px;
     margin: 0 auto;
 }
+
+
+/* Hero style */
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 48px;
+
+}
+
+.hero-title{
+    font-weight: 700;
+    font-size: 4rem;
+    
+}
+
+.banner-img{
+    width: 100%;
+
+}
+
+/* Teams */
+.temas{
+    align-items: center;
+    
+}
+
+.tesmp-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.our-feature{
+    margin-left: 130px;
+    max-width: 530px;
+}
+
+
+
+#quick-list{
+    font-weight: 500;
+}
+
+/* Responsibe Media */
+@media screen and (max-width: 576px) {
+    .Navbar, 
+    .nav-links,
+    .temas
+    {
+        flex-direction: column;
+    }
+    .tesmp-img-container{
+        grid-template-columns: repeat(1, 1fr) ;
+        
+
+    }
+    .our-feature{
+        margin-left: 16px;
+    }
+
+    
+}
+/* Medium size device */
+
+@media screen and (min-width: 576px) and (max-width:992px) {
+    .temas{
+        flex-direction: column;
+    }
+     .our-feature{
+        margin-left: 50px;
+    }
+
+    
+}
+
